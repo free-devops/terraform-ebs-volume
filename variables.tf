@@ -59,7 +59,7 @@ variable "tags" {
 variable "name" {
   description = "Volume Name"
   type        = string
-  default     = ""
+  default     = "default"
 }
 
 variable "project" {
