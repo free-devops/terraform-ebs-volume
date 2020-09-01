@@ -19,7 +19,7 @@ resource "aws_ebs_volume" "this" {
   encrypted = var.encrypted
   size      = var.volume_size
   type      = var.volume_type
-  iops      = var.volume_iops
+  iops      = var.volume_type == "io1" ? var.volume_iops : null
 
   tags = merge(
     {
