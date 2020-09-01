@@ -61,16 +61,3 @@ variable "name" {
   type        = string
   default     = "default"
 }
-
-variable "project" {
-  description = "Project name to use in description and tags"
-  type        = string
-  default     = "default"
-}
-
-
-variable "environment" {
-  description = "Default environment for name, description and tags (eg. dev)"
-  type        = string
-  default     = "dev"
-}

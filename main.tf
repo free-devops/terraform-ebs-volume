@@ -23,9 +23,7 @@ resource "aws_ebs_volume" "this" {
 
   tags = merge(
     {
-      "Name"        = format("${var.project}-${var.name}-0%s", count.index + 1)
-      "Environment" = var.environment
-      "Terraform"   = "true"
+      "Name"        = format("${var.name}-0%s", count.index + 1)
     },
     var.tags
   )
