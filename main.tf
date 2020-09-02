@@ -23,7 +23,7 @@ resource "aws_ebs_volume" "this" {
 
   tags = merge(
     {
-      "Name"        = format("${var.name}-0%s", count.index + 1)
+      "Name"        = format("${var.name}-%s", count.index + 1)
     },
     var.tags
   )
