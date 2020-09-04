@@ -15,5 +15,5 @@ output "volume_id" {
 
 output "device_name" {
   description = "The device name exposed to the instance"
-  value       = var.instance_count == 0 ? "" : aws_volume_attachment.this.*.device_name
+  value       = var.instance_count == 0 ? "" : aws_volume_attachment.this[0].device_name
 }
