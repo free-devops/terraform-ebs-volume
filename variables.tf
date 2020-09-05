@@ -1,10 +1,10 @@
-variable "instance_id" {
-  description = "Instance ID - Parameter Passed from ec2 Instance"
+variable "instance_ids" {
+  description = "Instance IDs - Parameter Passed from ec2 Instance"
   type        = list
 }
 
-variable "availability_zone" {
-  description = "availability Zone - Parameter Passed from ec2 Instance"
+variable "availability_zones" {
+  description = "availability Zones - Parameter Passed from ec2 Instance"
   type        = list
 }
 
